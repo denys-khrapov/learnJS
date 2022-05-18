@@ -1,7 +1,7 @@
 /* jshint -W097 */
 'use strict';
 
-
+//task-1
 const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
 
@@ -13,23 +13,43 @@ let personalMovieDB = {
 	privat: false,
 };
 
-const a = prompt('Один из последних просмотренных фильмов?', '');
-const b = +prompt('На сколько оцените его?', '');
-const d = prompt('Один из последних просмотренных фильмов?', '');
-const c = +prompt('На сколько оцените его?', '');
+// const a = prompt('Один из последних просмотренных фильмов?', '');
+// const b = +prompt('На сколько оцените его?', '');
+// const d = prompt('Один из последних просмотренных фильмов?', '');
+// const c = +prompt('На сколько оцените его?', '');
 
-personalMovieDB.movies.a = b;
-personalMovieDB.movies.d = c;
+// personalMovieDB.movies.a = b;
+// personalMovieDB.movies.d = c;
 
 
+
+
+//task-2
+
+for (let i = 0; i < 2; i++) {
+	const a = prompt('Один из последних просмотренных фильмов?', '');
+	const b = +prompt('На сколько оцените его?', '');
+
+	if (a != null && b != null && a !== '' && b !== '' && a.length < 50) {
+		personalMovieDB.movies[a] = b;
+		console.log('done');
+	} else {
+		console.log('error');
+		i--;
+	}
+
+}
 console.log(personalMovieDB);
 
-
-
-
-
-
-
+if (personalMovieDB.count < 10) {
+	alert('Просмотрено довольно мало фильмов');
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+	alert("Вы классический зритель");
+} else if (personalMovieDB.count >= 30) {
+	alert("Вы киноман");
+} else {
+	alert('Произошла ошибка');
+}
 
 
 
@@ -156,26 +176,26 @@ console.log(personalMovieDB);
 
 
 // циклы
-let num = 50;
+// let num = 50;
 
-do {
-	console.log(num);
-	num++;
-} while (num < 55);
-
-
-while (num <= 55) {
-	console.log(num);
-	num++;
-}
+// do {
+// 	console.log(num);
+// 	num++;
+// } while (num < 55);
 
 
+// while (num <= 55) {
+// 	console.log(num);
+// 	num++;
+// }
 
 
-for (let i = 1; i < 10; i++) {
-	if (i === 6) {
-		break;
-		// continue;
-	}
-	console.log(i);
-}
+
+
+// for (let i = 1; i < 10; i++) {
+// 	if (i === 6) {
+// 		break;
+// continue;
+// 	}
+// 	console.log(i);
+// }
