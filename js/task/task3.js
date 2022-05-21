@@ -36,7 +36,6 @@ let personalMovieDB = {
 		} else {
 			alert('Произошла ошибка');
 		}
-
 	},
 	writeYourGenres: function () {
 		for (let i = 1; i < 2; i++) {
@@ -47,7 +46,6 @@ let personalMovieDB = {
 			// } else {
 			// 	personalMovieDB.genres[i - 1] = genre;
 			// }
-
 			let genres = prompt(`Введите ваши любимые жанры через запятую`).toLowerCase();
 			if (genres === '' || genres == null) {
 				console.log('Вы ввели некоректные данные или не ввели их вовсе');
