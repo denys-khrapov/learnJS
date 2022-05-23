@@ -1,24 +1,24 @@
 //поиск подстроки
 
-const fruit = "Some fruit";
+// const fruit = "Some fruit";
 
-console.log(fruit.indexOf('fruit'));
-
-
-const logg = 'hello world';
-
-console.log(logg.slice(6, 11));
-
-console.log(logg.substring(6, 11));
-
-console.log(logg.substr(6, 5));
+// console.log(fruit.indexOf('fruit'));
 
 
-const numb = 12.2;
-console.log(Math.round(numb));
+const logg = 'Скотт пиригрим против всех';
+
+console.log(logg.slice(0, 21) + '...');
+
+// console.log(logg.substring(6, 11));
+
+// console.log(logg.substr(6, 5));
 
 
-const test = '12.2px';
+// const numb = 12.2;
+// console.log(Math.round(numb));
 
-console.log(parseInt(test));
-console.log(parseFloat(test));
+
+// const test = '12.2px';
+
+// console.log(parseInt(test));
+// console.log(parseFloat(test));
